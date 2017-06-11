@@ -1,7 +1,9 @@
-package com.mediacodecsample;
+package com.mediacodecsample.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.mediacodecsample.R;
 
 public class MainActivity extends AppCompatActivity {
 
