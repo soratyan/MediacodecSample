@@ -8,10 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mediacodecsample.MainActivity">
+    tools:context="com.mediacodecsample.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/playView"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:textSize="30dp"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/rateView"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:textSize="30dp"
+            android:gravity="center">
+        </TextView>
+
+        <SeekBar android:layout_height="wrap_content" android:id="@+id/SeekBar"
+            android:layout_width="match_parent"
+            android:progress="50"
+            android:max="100">
+        </SeekBar>
+
+    </LinearLayout>
+
 </RelativeLayout>
